@@ -1,0 +1,138 @@
+
+.products_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.head_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+
+.head_box button {
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  transition: all 0.3s ease;
+}
+.head_box button:hover {
+  transform: scale(0.95);
+}
+
+
+.head_box input {
+  width: 260px;
+  padding: 10px 14px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+  font-weight: 600;
+  outline: none;
+}
+
+
+.products_filters {
+  display: flex;
+  gap: 10px;
+}
+
+.products_filters button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.products_filters button.active {
+  background: #333;
+  color: #fff;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 30px auto;
+}
+
+.page_btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page_btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page_btn.active {
+  background: #333;
+  color: #fff;
+}
+
+
+@media (max-width: 1024px) {
+  .products_box {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products_box {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .head_box input {
+    width: 200px;
+  }
+
+  .head_box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .products_filters {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products_box {
+     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    
+  }
+
+  .head_box input {
+    width: 100%;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+}

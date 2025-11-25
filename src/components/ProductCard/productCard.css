@@ -1,0 +1,83 @@
+.prod_card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 420px;
+  padding: 15px;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+
+.prod_card:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+
+.prod_card h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prod_card img {
+  width: 180px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.like_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 22px;
+  transition: transform 0.2s;
+}
+
+.like_btn:hover {
+  transform: scale(1.1);
+}
+
+
+.delete_btn {
+  padding: 6px 12px;
+  background-color: rgb(238, 43, 43);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  margin-top: auto; 
+}
+
+
+.prod_card button {
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .prod_card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 390px;
+    padding: 12px;
+  }
+
+  .prod_card img {
+    width: 160px;
+    height: 180px;
+  }
+}
