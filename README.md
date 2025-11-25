@@ -62,7 +62,7 @@ cd react-products-spa
 npm install
 npm start
 
-<b>## Live Demo</b>
+## Live Demo
 
 https://products-spa-1lwc.vercel.app/products
 
