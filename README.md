@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+#  React Products SPA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional Single Page Application (SPA) built with **React**, **React Router**, and **Zustand**. The app retrieves products from a public API, supports **CRUD**, **search**, **filters**, **favorites**, **pagination**, and is fully responsive.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+-  Product list with cards (title, image, price, delete, like)
+-  Favorites (like toggle, favorites filter)
+-  Live search (no submit)
+-  Pagination (client-side, dynamic)
+-  Create product (form validation, add to store)
+-  Product details page with full info
+-  Zustand store: products, search, filters, pagination, actions
+-  Delete product (works for API and created items)
+-  Responsive, mobile-first UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Tech Stack
 
-### `npm test`
+| Purpose | Technology |
+|---------|------------|
+| Framework | React |
+| Routing | React Router v6 |
+| Store | Zustand |
+| API | https://fakestoreapi.com |
+| Language | JavaScript (ES6+) |
+| Styling | CSS |
+| Deployment | Vercel / Netlify / GitHub Pages |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+src/
+├── components/
+│ ├── Products/
+│ │ ├── Products.jsx
+│ │ └── products.css
+│ ├── ProductCard/
+│ │ ├── ProductCard.jsx
+│ │ └── productCard.css
+│ ├── ProductDetails/
+│ │ ├── ProductDetails.jsx
+│ │ └── productDetails.css
+│ ├── CreateProduct/
+│ │ ├── CreateProduct.jsx
+│ │ └── createProduct.css
+├── store/
+│ └── productsStore.js
+├── App.jsx
+├── index.js
+└── index.css
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/react-products-spa.git
+cd react-products-spa
+npm install
+npm start
 
-### `npm run eject`
+<b>## Live Demo</b>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://products-spa-1lwc.vercel.app/products
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author
+ Andranik Kocharyan
+ React · Zustand 
+ GitHub: https://github.com/And-Koch
